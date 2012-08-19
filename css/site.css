@@ -3,6 +3,7 @@ body {
   background-size: cover;
   color: #FFF;
   padding-top: 36px;
+  font-size: 13px;
 }
 
 .container {
@@ -102,7 +103,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
+  text-shadow: 0px 1px 3px #000;
   padding: 18px;
   margin: 0
 }
@@ -136,6 +138,19 @@ body {
 }
 
 #carousel .active {
-  // outline: 3px solid #;
   box-shadow: 0px 0px 5px #3A6ADE;
+}
+
+section {
+  margin-bottom: 1.5em;
+}
+
+#map {
+  text-align: center;
+}
+
+#map img {
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
