@@ -11,8 +11,19 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery.tinycarousel.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(){
-      $('#carousel').tinycarousel({ pager: true, controls: true, interval: true, rewind: true, animation: false });
+    $(function(){
+      $('#carousel').tinycarousel({ pager: true, controls: true, interval: true, animation: false });
+    });
+
+    $(document).on('keydown', function(e) {
+      switch(e.keyCode) {
+        case 37:
+          $('a.prev').click()
+          break;
+        case 39:
+          $('a.next').click()
+          break;
+      }
     });
   </script>
 </head>
