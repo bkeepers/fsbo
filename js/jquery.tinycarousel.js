@@ -96,20 +96,20 @@
 		this.start = function(){ bPause = false; setTimer(); };
 		this.move = function(iDirection, bPublic){
 			iCurrent = bPublic ? iDirection : iCurrent += iDirection;
-			if(iCurrent > -1 && iCurrent < iSteps){
-				var oPosition = {};
-				oPosition[bAxis ? 'left' : 'top'] = -(iCurrent * (iPageSize * options.display));
-				oContent.animate(oPosition,{
-					queue: false,
-					duration: options.animation ? options.duration : 0,
-					complete: function(){
-						if(typeof options.callback == 'function')
-						options.callback.call(this, oPages[iCurrent], iCurrent);
-					}
-				});
-				setButtons();
-				setTimer();
-			}
+			if(iCurrent < 0) iCurrent = iSteps - 1;
+			if(iCurrent >= iSteps) iCurrent = 0;
+			var oPosition = {};
+			oPosition[bAxis ? 'left' : 'top'] = -(iCurrent * (iPageSize * options.display));
+			oContent.animate(oPosition,{
+				queue: false,
+				duration: options.animation ? options.duration : 0,
+				complete: function(){
+					if(typeof options.callback == 'function')
+					options.callback.call(this, oPages[iCurrent], iCurrent);
+				}
+			});
+			setButtons();
+			setTimer();
 		};
 		return initialize();
 	};
