@@ -144,8 +144,8 @@ body {
 }
 
 #carousel .pagenum img {
-  max-width: 150%;
-  max-height: 150%;
+  margin-left: -10%;
+  height: 100%;
 }
 
 #carousel .active {
