@@ -12,20 +12,31 @@ body {
 
 #header {
   margin-bottom: 36px;
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 #header h1, #header h2 {
-  color: #FFF;
   font-weight: bold;
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-  font-size: 54px;
   margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+#header h1 {
+  color: #900;
+  font-size: 56px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 #header h2 {
-  font-size: 36px;
-  color: rgba(255,255,255,0.7);
+  font-size: 30px;
+  color: #000;
+  color: rgba(0,0,0,0.6);
+}
+
+#header p {
+  margin-top: 0.8em;
+  font-size: 1.1em;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .content {
@@ -33,7 +44,7 @@ body {
   background-color: #FFF;
   background-color: rgba(255,255,255,0.8);
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-  padding: 36px 0;
+  padding: 3em 0;
 }
 
 #carousel {
@@ -43,7 +54,7 @@ body {
 
 #carousel .viewport {
   width: 710px;
-  height: 400px;
+  height: 470px;
   overflow: hidden;
   position: relative;
   border-radius: 3px;
@@ -56,7 +67,7 @@ body {
   display: block;
   padding: 0 18px;
   width: 30px;
-  height: 400px;
+  height: 470px;
   text-indent: -2000px;
   overflow: hidden;
   background: no-repeat center center;
@@ -90,7 +101,7 @@ body {
 #carousel .overview li {
   float: left;
   width: 710px;
-  height: 400px;
+  height: 470px;
   position: relative;
 }
 
@@ -153,4 +164,15 @@ section {
   display: block;
   border-radius: 3px;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+dl dt {
+  float: left;
+  clear: left;
+  width: 50px;
+  text-align: right;
+}
+
+dl dd {
+  margin-left: 65px;
 }
