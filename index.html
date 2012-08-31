@@ -8,24 +8,6 @@
     <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
   <![endif]-->
   <link rel="stylesheet" href="css/blueprint/print.css" media="print">
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery.tinycarousel.js"></script>
-  <script type="text/javascript">
-    $(function(){
-      $('#carousel').tinycarousel({ pager: true, controls: true, interval: true, animation: false });
-    });
-
-    $(document).on('keydown', function(e) {
-      switch(e.keyCode) {
-        case 37:
-          $('a.prev').click()
-          break;
-        case 39:
-          $('a.next').click()
-          break;
-      }
-    });
-  </script>
 </head>
 <body>
   <div id="header" class="content">
@@ -179,6 +161,24 @@
     </div>
   </div>
 
+<script src="js/jquery.js"></script>
+<script src="js/jquery.tinycarousel.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('#carousel').tinycarousel({ pager: true, controls: true, interval: true, animation: false });
+  });
+
+  $(document).on('keydown', function(e) {
+    switch(e.keyCode) {
+      case 37:
+        $('a.prev').click()
+        break;
+      case 39:
+        $('a.next').click()
+        break;
+    }
+  });
+</script>
 <script type="text/javascript">
   var _gauges = _gauges || [];
   (function() {
