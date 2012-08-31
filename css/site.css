@@ -1,5 +1,5 @@
 body {
-  background: #000 url(../images/bg.jpg) no-repeat center center fixed;
+  background: url(../images/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   color: #FFF;
   padding-top: 36px;
