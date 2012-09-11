@@ -12,8 +12,11 @@ body {
   width: 720px;
 }
 
-#header {
-  margin-bottom: 36px;
+.banner {
+  padding: 0.5em;
+  background-color: #77140B;
+  color: #fff;
+  font-size: 1.5em;
 }
 
 #header h1, #header h2 {
@@ -64,8 +67,9 @@ body {
 }
 
 #carousel {
-  position: relative;
+  margin-top: 36px;
   margin-bottom: 36px;
+  position: relative;
 }
 
 #carousel .viewport {
